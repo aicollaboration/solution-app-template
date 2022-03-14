@@ -11,6 +11,9 @@ export default function Solution() {
   }, []);
 
   async function getSolution() {
+    
+console.log(process.env.REACT_APP_MAP_KEY,"SOLUTION_ID",process.env)
+
     const solutionId = 91;
     try {
       setLoading(true);

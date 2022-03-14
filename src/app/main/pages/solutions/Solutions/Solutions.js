@@ -22,7 +22,9 @@ export default function Solutions({ session }) {
   }
 
   async function getSolutionServices() {
-    const solutionId = 84;
+    const solutionId = process.env.REACT_APP_MAP_KEY;
+    console.log(process.env.REACT_APP_MAP_KEY,"SOLUTION_ID",process.env)
+
     try {
       setLoading(true);
 
